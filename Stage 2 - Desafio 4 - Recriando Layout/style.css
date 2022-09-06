@@ -1,0 +1,139 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    font-size: 62.5%;
+    font-family: 'JetBrains Mono', monospace;
+
+    --bg-body: hsla(243, 17%, 22%, 1);
+    --tb-text: hsla(172, 100%, 37%, 1);
+    --tt-text: hsla(0, 0%, 76%, 1);
+    --tt-paragraph: hsla(0, 0%, 76%, 1);
+    --th-header: hsla(0, 0%, 100%, 1);
+
+}
+
+body {
+    margin: 0;
+    background: var(--bg-body);
+}
+
+
+
+.page {
+    width: 1000px;
+    margin: 99px auto 23px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10rem;
+}
+
+nav div.logo {
+    color: var(--th-header);
+    font-size: 2.4rem;
+}
+
+
+a {
+    text-decoration: none;
+}
+nav div.logo img {
+    width: 1.4rem;
+}
+
+footer p a {
+    text-decoration: none;
+    color: var(--tt-paragraph);
+}
+
+
+ul {
+    display: flex;
+    color: var(--th-header);
+    list-style: none;
+    gap: 6.4rem;
+}
+
+ul li a {
+    font-size: 1.4rem;
+    color: var(--th-header);
+    text-decoration: none;
+}
+
+img pc {
+    width: 401px;
+    height: 283px;
+}
+
+
+main {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 7.7rem;
+    margin-bottom:15rem;
+}
+
+.content {
+    color: var(--tt-text);
+    align-content: center;
+    width: 60rem;
+    height: 16rem;
+    
+}
+
+.content h1 {
+    color: var(--th-header)
+}
+
+.content h1,
+.content h1 span {
+    font-size: 3.6rem;
+    font-weight: bold;
+    line-height: 4rem;
+    margin-bottom: 5.9rem;
+    white-space: nowrap;
+
+}
+
+.content span {
+    color: var(--tb-text);
+}
+
+
+
+.content .text {
+    text-align: center;
+    color: var(--tt-paragraph);
+    font-size: 1.6rem;
+    line-height: 2.8rem;
+    font-weight: normal;
+}
+
+.content .text p {
+    margin-bottom: 1.6rem;
+}
+
+footer {
+    font-size: 1.4rem;
+    line-height: 2.8rem;
+    color: var(--tt-paragraph);
+    text-align: center;
+    margin: 3.5rem 20.5rem 3.5rem 20.5rem; 
+    border-top: 1px solid var(--tb-text);
+    padding-top: 2rem;
+    
+}
+
+#padlock-footer {
+    position:fixed;
+    bottom: 25rem;
+    left: 50rem;
+}
